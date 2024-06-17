@@ -1,0 +1,229 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: lightgray;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.infomati {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servh2, .resultadosh2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resultados .resultado {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+ .resultado:hover {
+    transform: scale(1.1);
+}
+
+#resultados .resultado img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#servicios .card {
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    margin: 0 10px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    
+}
+
+
+.img-estilo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.img-estilo:hover {
+    transform: scale(1.1);
+}
+
+#contacto {
+    text-align: center;
+    padding: 20px;
+    background-color: #858383;
+}
+
+#contacto .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto .metodo-cont {
+    margin: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.contador {
+   text-align: center;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   max-width: 400px;
+   margin: auto;
+}
+.contador h1 {
+   color: #4CAF50; 
+   margin-bottom: 10px;
+}
+.contador p {
+   font-size: 2em;
+   margin: 10px;
+   color: #333;
+}
+.contador span {
+   font-weight: bold;
+   font-size: 1.5em;
+   color: #4CAF50; 
+   display: inline-block;
+   min-width: 2em;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .infomati {
+        width: 50%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .container {
+        padding: 20px 40px;
+    }
+
+    #resultados .resultado {
+        width: 45%;
+        max-width: 400px;
+    }
+
+    #servicios .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: calc(25% - 20px);
+    }
+}
+
+
